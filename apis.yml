@@ -1,7 +1,17 @@
 aid: airna
 name: AIRNA
-description: 'AIRNA is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'AIRNA Corporation is a clinical-stage biotechnology company developing
+  precision RNA editing therapeutics based on ADAR (adenosine deaminase acting on RNA),
+  a naturally occurring human protein the company redirects to convert adenosine to
+  inosine at a targeted RNA site — changing protein function without permanently altering
+  DNA. Its oligonucleotide medicines are designed for durable, reversible and repeatable
+  dosing. The lead program, AIR-001, targets alpha-1 antitrypsin deficiency (AATD),
+  alongside cardiometabolic RNA editing programs spanning rare genetic disorders and
+  common conditions. Founded by scientific pioneers of ADAR editing, AIRNA operates
+  from Cambridge, Massachusetts and Tübingen, Germany (AIRNA Bio Germany GmbH). AIRNA
+  publishes no public API, developer portal, SDK, or machine-readable specification;
+  therapeutics, not software, are the product.'
+image: https://airna.com/wp-content/uploads/2025/03/AIRNA-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/airna/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,13 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Biotechnology
+- Therapeutics
+- RNA Editing
+- Genetic Medicine
+- Life Sciences
+- Rare Disease
+- Pharmaceuticals
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,49 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/airna-domain-security.yml
 - type: Website
+  url: https://airna.com/
+- type: Blog
+  url: https://airna.com/news/
+- type: BlogRSS
+  url: https://airna.com/feed/
+- type: Contact
+  url: https://airna.com/contact/
+- type: TermsOfService
+  url: https://airna.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://airna.com/privacy-policy
+- type: Careers
+  url: https://airna.com/join-us/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/airna-bio
+- type: InvestmentProfile
   url: https://forgeglobal.com/airna_stock/
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: AIRNA is a clinical-stage RNA editing biotechnology company whose product
+    is an oligonucleotide therapeutic (lead program AIR-001 for AATD), not software;
+    airna.com is a WordPress marketing site with no developer, API or documentation
+    section, and every contract-discovery path returned 404.
+  evidence:
+  - url: https://airna.com/openapi.json
+    status: 404
+  - url: https://airna.com/developers
+    status: 404
+  - url: https://airna.com/.well-known/agent-card.json
+    status: 404
+  - url: https://airna.com/.well-known/security.txt
+    status: 404
+  - url: https://airna.com/llms.txt
+    status: 404
+  - url: https://airna.com/wp-json/mcp/mcp-adapter-default-server
+    status: 401
+  checked: '2026-08-06'
