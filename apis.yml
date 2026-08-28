@@ -11,6 +11,17 @@ description: 'AIRNA Corporation is a clinical-stage biotechnology company develo
   from Cambridge, Massachusetts and Tübingen, Germany (AIRNA Bio Germany GmbH). AIRNA
   publishes no public API, developer portal, SDK, or machine-readable specification;
   therapeutics, not software, are the product.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://airna.com/wp-content/uploads/2025/03/AIRNA-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/airna/refs/heads/main/apis.yml
 x-type: company
